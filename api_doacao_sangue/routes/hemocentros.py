@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.models import Hemocentro
-from app.schemas import (
+from api_doacao_sangue.database import get_db
+from api_doacao_sangue.models import Hemocentro
+from api_doacao_sangue.schemas import (
     HemocentroCreate,
     HemocentroUpdate,
     HemocentroResponse,

@@ -3,6 +3,10 @@ __pycache__/
 *.pyc
 venv/
 .env
+# Arquivos gerados
+build/
+dist/
+*.egg-info/
 
 # Banco local
 banco.db

@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-from app.database import engine
-from app.models import Base
-from app.scheduler import iniciar_scheduler
+from api_doacao_sangue.database import engine
+from api_doacao_sangue.models import Base
+from api_doacao_sangue.scheduler import iniciar_scheduler
 
-from app.routes import hemocentros, estoques, campanhas, compatibilidade, cidades, fontes, integracoes
+from api_doacao_sangue.routes import hemocentros, estoques, campanhas, compatibilidade, cidades, fontes, integracoes
 
 Base.metadata.create_all(bind=engine)
 

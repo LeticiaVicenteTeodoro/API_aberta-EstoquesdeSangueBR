@@ -2,16 +2,16 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from datetime import datetime
 
-from app.database import get_db
-from app.models import Hemocentro, Estoque
-from app.services.hemominas import coletar_estoque_hemominas
-from app.services.hemosc import coletar_estoque_hemosc
-from app.services.hemepar import coletar_estoque_hemepar
-from app.services.hemoes import coletar_estoque_hemoes
-from app.services.hemoce import coletar_estoque_hemoce
-from app.services.hemopa import coletar_estoque_hemopa
-from app.services.hemoba import coletar_estoque_hemoba
-from app.services.hemosul import coletar_estoque_hemosul
+from api_doacao_sangue.database import get_db
+from api_doacao_sangue.models import Hemocentro, Estoque
+from api_doacao_sangue.services.hemominas import coletar_estoque_hemominas
+from api_doacao_sangue.services.hemosc import coletar_estoque_hemosc
+from api_doacao_sangue.services.hemepar import coletar_estoque_hemepar
+from api_doacao_sangue.services.hemoes import coletar_estoque_hemoes
+from api_doacao_sangue.services.hemoce import coletar_estoque_hemoce
+from api_doacao_sangue.services.hemopa import coletar_estoque_hemopa
+from api_doacao_sangue.services.hemoba import coletar_estoque_hemoba
+from api_doacao_sangue.services.hemosul import coletar_estoque_hemosul
 
 router = APIRouter(
     prefix="/integracoes",

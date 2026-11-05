@@ -2,8 +2,8 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from sqlalchemy.orm import Session
 from datetime import datetime
 
-from app.database import SessionLocal
-from app.routes.integracoes import (
+from api_doacao_sangue.database import SessionLocal
+from api_doacao_sangue.routes.integracoes import (
     atualizar_estoque_hemominas,
     atualizar_estoque_hemosc,
     atualizar_estoque_hemepar,

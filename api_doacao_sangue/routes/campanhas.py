@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.models import Campanha
-from app.schemas import (
+from api_doacao_sangue.database import get_db
+from api_doacao_sangue.models import Campanha
+from api_doacao_sangue.schemas import (
     CampanhaCreate,
     CampanhaUpdate,
     CampanhaResponse
